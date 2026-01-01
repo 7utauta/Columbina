@@ -9,7 +9,7 @@ const data = {
         { name: "Slime Concentrate", count: 36, img: "https://paimon.moe/images/items/slime_concentrate.png" },
         { name: "Radiant Antler", count: 46, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/269e8d6724fd4b6f9df529c8d03025d51764684746.png?x-oss-process=image/format,webp" },
         { name: "Winter Icelea", count: 168, note: "NEW Nod-Krai Specialty", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/77caabcfc7a6461eb67052d6e0f643b71764765881.webp?x-oss-process=image/format,webp" },
-        { name: "Wanderer's Advice", count: "3", img: "https://static.wikia.nocookie.net/gensin-impact/images/6/60/Item_Wanderer%27s_Advice.png/revision/latest?cb=20201116222406" },
+        { name: "Wanderer's Advice", count: "3", img: "https://paimon.moe/images/items/wanderes_advice.png" },
         { name: "Hero's Wit", count: "418", img: "https://paimon.moe/images/items/heros_wit.png" },
         { name: "Mora", count: "2,092,400", img: "https://paimon.moe/images/items/mora.png" }
     ],
@@ -35,7 +35,7 @@ const data = {
         { name: "Tattered Warrant", count: 15, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/9b33288ddf35436ebe41461aa96105241764684746.png?x-oss-process=image/format,webp" },
         { name: "Immaculate Warrant", count: 23, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/6ac5f65e0226457da60a4fb42de1e60e1764684746.png?x-oss-process=image/format,webp" },
         { name: "Frost-Etched Warrant", count: 27, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/f2dc24671d4e45e1b6d67bbd07e63e861764684747.png?x-oss-process=image/format,webp" },
-        { name: "Mystic Enhancement Ore", count: "709", img: "https://static.wikia.nocookie.net/gensin-impact/images/5/55/Item_Mystic_Enhancement_Ore.png/revision/latest?cb=20210106073921" },
+        { name: "Mystic Enhancement Ore", count: "709", img: "https://paimon.moe/images/items/mystic_enhancement_ore.png" },
         { name: "Mora", count: "753,000", img: "https://paimon.moe/images/items/mora.png" }
     ]
 };
