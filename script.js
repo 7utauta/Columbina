@@ -2,8 +2,8 @@ const data = {
     "Ascension (Level 90)": [
         { name: "Varunada Lazurite Gemstone", count: 6, img: "https://paimon.moe/images/items/varunada_lazurite_gemstone.png" },
         { name: "Varunada Lazurite Chunk", count: 9, img: "https://paimon.moe/images/items/varunada_lazurite_chunk.png" },
-        { name: "Varunada Lazurite Fragment", count: 9, img: "https://paimon.moe/images/items/varunada_lazurite_chunk.png" },
-        { name: "Varunada Lazurite Sliver", count: 1, img: "https://paimon.moe/images/items/varunada_lazurite_chunk.png" },
+        { name: "Varunada Lazurite Fragment", count: 9, img: "https://paimon.moe/images/items/varunada_lazurite_fragment.png" },
+        { name: "Varunada Lazurite Sliver", count: 1, img: "https://paimon.moe/images/items/varunada_lazurite_sliver.png" },
         { name: "Slime Condensate", count: 18, img: "https://paimon.moe/images/items/slime_condensate.png" },
         { name: "Slime Secretions", count: 30, img: "https://paimon.moe/images/items/slime_secretions.png" },
         { name: "Slime Concentrate", count: 36, img: "https://paimon.moe/images/items/slime_concentrate.png" },
