@@ -210,3 +210,19 @@ button.reset-btn:hover {
     h1 { font-size: 2rem; }
     .checklist-grid { grid-template-columns: 1fr; }
 }
+
+/* --- Legal Footer --- */
+.legal-footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--card-border);
+    text-align: center;
+    color: var(--text-sub);
+    font-size: 0.75rem; /* Smaller font for legal text */
+    opacity: 0.6;       /* Make it subtle */
+    line-height: 1.6;
+}
+
+.legal-footer p {
+    margin: 5px 0;
+}
