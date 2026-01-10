@@ -12,36 +12,36 @@ const data = {
         { name: "Winter Icelea", count: 168, note: "New Local Specialty", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/77caabcfc7a6461eb67052d6e0f643b71764765881.webp?x-oss-process=image/format,webp" },
         { name: "Wanderer's Advice", count: 3, img: "https://paimon.moe/images/items/wanderes_advice.png" },
         { name: "Hero's Wit", count: 418, img: "https://paimon.moe/images/items/heros_wit.png" },
-        { name: "Mora", count: 2092400, img: "https://paimon.moe/images/items/mora.png" }
+        { name: "Mora", count: "2,092,400", img: "https://paimon.moe/images/items/mora.png" }
     ],
     "Talents": [
         { name: "Teachings of Moonlight", count: 9, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/97ba4eb2235143cfa085898f7c5820ad1764684746.png?x-oss-process=image/format,webp" },
         { name: "Guide to Moonlight", count: 63, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/3ae406905acc4ce49be3ccb509543aec1764684746.png?x-oss-process=image/format,webp" },
         { name: "Philosophies of Moonlight", count: 114, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/eeb1b7174fb448858b2e80a81e97f6531764684748.png?x-oss-process=image/format,webp" },
         { name: "Crown of Insight", count: 3, img: "https://paimon.moe/images/items/crown_of_insight.png" },
-        { name: "Weekly Boss Drop", count: 18, note: "New Weekly Boss", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/2ff5c8abe3b94573b7116c3c73e4981d1764765727.webp?x-oss-process=image/format,webp" },
+        { name: "New Weekly Boss Drop", count: 18, note: "New Weekly Boss", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/2ff5c8abe3b94573b7116c3c73e4981d1764765727.webp?x-oss-process=image/format,webp" },
         { name: "Slime Condensate", count: 18, img: "https://paimon.moe/images/items/slime_condensate.png" },
         { name: "Slime Secretions", count: 66, img: "https://paimon.moe/images/items/slime_secretions.png" },
         { name: "Slime Concentrate", count: 93, img: "https://paimon.moe/images/items/slime_concentrate.png" },
-        { name: "Mora", count: 4957500, img: "https://paimon.moe/images/items/mora.png" }
+        { name: "Mora", count: "4,957,500", img: "https://paimon.moe/images/items/mora.png" }
     ],
-    "Weapon": [
-        { name: "Far-North Scions (Gold)", count: 6, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/9761934dbfe74fec8b501b2f5163b7981764684746.png?x-oss-process=image/format,webp" },
-        { name: "Far-North Scions (Purple)", count: 14, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/69233087036249ce969f96b7a605cb951764684748.png?x-oss-process=image/format,webp" },
-        { name: "Far-North Scions (Blue)", count: 14, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/a135cd9995a644e9b94c8d97c9b4535f1764684746.png?x-oss-process=image/format,webp" },
-        { name: "Far-North Scions (Green)", count: 5, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/38b8278c46264a83a1f3c28973ccdb761764684746.png?x-oss-process=image/format,webp" },
-        { name: "Fractured Eye", count: 41, note: "New Elite Mob", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/14812f684a614e1fbec0a7e30198a8221764913294.webp?x-oss-process=image/format,webp" },
-        { name: "Aberrant Core", count: 27, note: "New Elite Mob", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/b843ae28d45f4e6c9a5cba318054a49f1764913316.webp?x-oss-process=image/format,webp" },
-        { name: "Beak of Deep Shadow", count: 23, note: "New Elite Mob", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/3b02d64a31494f13978c1489a63a1d8a1764913337.webp?x-oss-process=image/format,webp" },
+    "Weapon: Nocturne's Curtain Call": [
+        { name: "Sundered Glory of the Far-North Scions", count: 5, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/9761934dbfe74fec8b501b2f5163b7981764684746.png?x-oss-process=image/format,webp" },
+        { name: "Unyielding Delusion of the Far-North Scions", count: 14, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/69233087036249ce969f96b7a605cb951764684748.png?x-oss-process=image/format,webp" },
+        { name: "Oblation of the Far-North Scions", count: 14, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/a135cd9995a644e9b94c8d97c9b4535f1764684746.png?x-oss-process=image/format,webp" },
+        { name: "Aureate Radiance of the Far-North Scions", count: 6, note: "", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/38b8278c46264a83a1f3c28973ccdb761764684746.png?x-oss-process=image/format,webp" },
+        { name: "Fractured Eye of the Deep Shadow", count: 23, note: "New Elite Mob", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/14812f684a614e1fbec0a7e30198a8221764913294.webp?x-oss-process=image/format,webp" },
+        { name: "Aberrant Core of the Deep Shadow", count: 27, note: "New Elite Mob", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/b843ae28d45f4e6c9a5cba318054a49f1764913316.webp?x-oss-process=image/format,webp" },
+        { name: "Beak of Deep Shadow", count: 41, note: "New Elite Mob", img: "https://shop.ldrescdn.com/rms/ld-space/process/img/3b02d64a31494f13978c1489a63a1d8a1764913337.webp?x-oss-process=image/format,webp" },
         { name: "Frost-Etched Warrant", count: 27, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/f2dc24671d4e45e1b6d67bbd07e63e861764684747.png?x-oss-process=image/format,webp" },
         { name: "Immaculate Warrant", count: 23, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/6ac5f65e0226457da60a4fb42de1e60e1764684746.png?x-oss-process=image/format,webp" },
         { name: "Tattered Warrant", count: 15, img: "https://shop.ldrescdn.com/rms/ld-space/process/img/9b33288ddf35436ebe41461aa96105241764684746.png?x-oss-process=image/format,webp" },
         { name: "Mystic Enhancement Ore", count: 709, img: "https://paimon.moe/images/items/mystic_enhancement_ore.png" },
-        { name: "Mora", count: 1100000, img: "https://paimon.moe/images/items/mora.png" }
+        { name: "Mora", count: "753,000", img: "https://paimon.moe/images/items/mora.png" }
     ]
 };
 
-const restrictedItems = ["Winter Icelea", "Weekly Boss Drop", "Fractured Eye", "Aberrant Core", "Beak of Deep Shadow"];
+const restrictedItems = ["Winter Icelea", "Weekly Boss Drop", "Fractured Eye of the Deep Shadow", "Aberrant Core of the Deep Shadow", "Beak of Deep Shadow"];
 const PREFIX = "columbina_tracker_final_v5_";
 const app = document.getElementById('app');
 const statusEl = document.getElementById('save-status');
@@ -122,6 +122,37 @@ document.getElementById('resetBtn').addEventListener('click', () => {
         loadSavings();
     }
 });
+
+// COUNTDOWN TIMER
+function updateCountdown() {
+    // Target: Jan 14, 2026 11:00 AM GMT+8 (ISO 8601 format)
+    const targetDate = new Date('2026-01-14T11:00:00+08:00').getTime();
+    const now = new Date().getTime();
+    const gap = targetDate - now;
+
+    if (gap <= 0) {
+        document.getElementById('countdown').innerHTML = "<div class='time-box' style='width:100%'><span>AVAILABLE NOW!</span></div>";
+        return;
+    }
+
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+
+    const d = Math.floor(gap / day);
+    const h = Math.floor((gap % day) / hour);
+    const m = Math.floor((gap % hour) / minute);
+    const s = Math.floor((gap % minute) / second);
+
+    document.getElementById('days').innerText = d < 10 ? '0' + d : d;
+    document.getElementById('hours').innerText = h < 10 ? '0' + h : h;
+    document.getElementById('minutes').innerText = m < 10 ? '0' + m : m;
+    document.getElementById('seconds').innerText = s < 10 ? '0' + s : s;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown(); // Run immediately
 
 // GENERATE CARD
 document.getElementById('saveBtn').addEventListener('click', () => {
