@@ -1,228 +1,127 @@
 :root {
-    /* Theme: Columbina's Palette */
-    --primary: #ffd1dc; /* Soft Pink */
-    --accent: #ff4d6d;  /* Eye Red */
+    /* Theme */
+    --primary: #ffd1dc; 
+    --accent: #ff4d6d;
     --glass-bg: rgba(20, 20, 24, 0.75);
     --card-border: rgba(255, 209, 220, 0.2);
     --text-main: #ffffff;
     --text-sub: #c0c0c0;
+    
+    /* Background */
+    --web-bg-image: url('splash.JPEG'); 
+    --web-overlay: linear-gradient(rgba(10, 10, 12, 0.8), rgba(10, 10, 12, 0.9));
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 40px;
-    min-height: 100vh;
-    color: var(--text-main);
-
-    /* Background */
+    margin: 0; padding: 40px; min-height: 100vh; color: var(--text-main);
     background-color: #1a1a1d;
-    background-image: linear-gradient(135deg, #1a1a1d 0%, #2d1b2e 100%);
-    background: linear-gradient(rgba(10, 10, 12, 0.8), rgba(10, 10, 12, 0.9)), 
-                url('https://preview.redd.it/6-3-splash-arts-via-firefly-v0-aln4pjz41z4g1.png?width=1080&crop=smart&auto=webp&s=12ca2dd3cb0431241d168efa0e0ef6ae61069149');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: var(--web-overlay), var(--web-bg-image);
+    background-size: cover; background-position: center; background-attachment: fixed;
     background-repeat: no-repeat;
+    
+    /* Custom Cursor */
+    cursor: url('genshin_cursor.cur'), auto; 
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
+/* Force custom cursor on interactive elements */
+a, button, .card, label, input {
+    cursor: url('genshin_cursor.cur'), pointer;
 }
 
-/* --- Header --- */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 50px;
-    border-bottom: 1px solid var(--card-border);
-    padding-bottom: 20px;
-}
+.container { max-width: 1100px; margin: 0 auto; }
 
-h1 {
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    font-size: 2.8rem;
-    color: var(--primary);
-    text-shadow: 0 0 20px rgba(255, 77, 109, 0.5);
-}
+/* Header */
+header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; border-bottom: 1px solid var(--card-border); padding-bottom: 20px; }
+h1 { font-weight: 300; text-transform: uppercase; letter-spacing: 4px; margin: 0; font-size: 2.8rem; color: var(--primary); text-shadow: 0 0 20px rgba(255, 77, 109, 0.5); }
+.subtitle { display: block; margin-top: 5px; color: var(--text-sub); font-style: italic; font-size: 0.95rem; }
 
-.subtitle {
-    display: block;
-    margin-top: 5px;
-    color: var(--text-sub);
-    font-style: italic;
-    font-size: 0.95rem;
-}
+.button-group { display: flex; gap: 10px; }
+button { padding: 10px 20px; border-radius: 30px; font-size: 0.85rem; transition: 0.3s; backdrop-filter: blur(5px); }
+button.reset-btn { background: rgba(255,255,255,0.05); border: 1px solid var(--text-sub); color: var(--text-sub); }
+button.reset-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(255, 77, 109, 0.1); }
+button.save-btn { background: var(--primary); border: 1px solid var(--primary); color: #1a1a1d; font-weight: bold; }
+button.save-btn:hover { background: var(--accent); color: white; box-shadow: 0 0 15px rgba(255, 77, 109, 0.4); }
 
-button.reset-btn {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid var(--text-sub);
-    color: var(--text-sub);
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: 0.3s;
-    backdrop-filter: blur(5px);
+/* SAVINGS INPUT */
+.savings-section { display: flex; gap: 20px; margin-bottom: 30px; flex-wrap: wrap; }
+.savings-card {
+    flex: 1; background: var(--glass-bg); border: 1px solid var(--card-border);
+    border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 15px;
+    backdrop-filter: blur(10px); min-width: 300px; transition: 0.3s;
 }
+.savings-card:focus-within { border-color: var(--accent); box-shadow: 0 0 15px rgba(255, 77, 109, 0.1); }
 
-button.reset-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: rgba(255, 77, 109, 0.1);
-    box-shadow: 0 0 15px rgba(255, 77, 109, 0.2);
+.savings-icon { width: 50px; height: 50px; object-fit: contain; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); }
+.savings-icon.primo-icon { width: 72px; height: 72px; margin-left: -10px; }
+
+.input-group { display: flex; flex-direction: column; width: 100%; }
+.input-group label { font-size: 0.85rem; color: var(--text-sub); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
+.input-group input {
+    background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); color: var(--primary);
+    padding: 12px; border-radius: 8px; font-size: 1.4rem; font-family: 'Segoe UI', monospace; width: 100%;
+    transition: 0.3s; box-sizing: border-box; font-weight: bold;
 }
+.input-group input:focus { outline: none; border-color: var(--accent); background: rgba(0,0,0,0.6); }
 
-/* --- Sections --- */
-.section-title {
-    margin: 40px 0 20px 0;
-    font-size: 1.2rem;
-    color: var(--primary);
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* Warning Note */
+.warning-note {
+    background: rgba(255, 77, 109, 0.1); border: 1px solid rgba(255, 77, 109, 0.3); color: #ffcfd6;
+    padding: 12px 20px; border-radius: 12px; margin-bottom: 40px; font-size: 0.9rem;
+    display: flex; align-items: center; gap: 15px; backdrop-filter: blur(5px);
 }
+.warning-note strong { color: var(--accent); letter-spacing: 1px; text-transform: uppercase; font-size: 0.8rem; }
 
-.section-title::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, var(--card-border), transparent);
+/* Main List */
+.section-title { margin: 40px 0 20px 0; font-size: 1.2rem; color: var(--primary); display: flex; align-items: center; gap: 15px; text-transform: uppercase; letter-spacing: 1px; }
+.section-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--card-border), transparent); }
+.checklist-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 15px; }
+
+.card { 
+    background: var(--glass-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 15px; 
+    display: flex; align-items: center; gap: 15px; transition: 0.2s; backdrop-filter: blur(10px); 
+    user-select: none;
 }
+.card:hover { transform: translateY(-3px); border-color: var(--accent); }
+.card:active { transform: scale(0.98); }
 
-/* --- Grid & Cards --- */
-.checklist-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 15px;
-}
-
-.card {
-    background: var(--glass-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    transition: transform 0.2s, background 0.2s, border-color 0.2s;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    background: rgba(40, 40, 45, 0.9);
-    border-color: var(--accent);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.item-icon {
-    width: 52px;
-    height: 52px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 5px rgba(255, 209, 220, 0.1));
-}
-
+.item-icon { width: 50px; height: 50px; object-fit: contain; }
 .item-details { flex-grow: 1; }
+.item-name { font-size: 1rem; font-weight: 600; display: block; }
+.item-count { font-size: 0.85rem; color: var(--text-sub); }
+.item-count .badge { font-size: 0.7em; background: rgba(255,255,255,0.1); color: #ddd; padding: 2px 8px; border-radius: 10px; margin-left: 8px; border: 1px solid rgba(255,255,255,0.1); }
 
-.item-name {
-    font-size: 1rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.item-count {
-    font-size: 0.85rem;
-    color: var(--text-sub);
-}
-
-.badge {
-    font-size: 0.7em;
-    background: rgba(255,255,255,0.1);
-    color: #ddd;
-    padding: 2px 8px;
-    border-radius: 10px;
-    margin-left: 8px;
-    border: 1px solid rgba(255,255,255,0.1);
-    vertical-align: middle;
-}
-
-/* --- Checkbox --- */
+/* Checkbox UI */
 .checkbox-container input { display: none; }
+.checkbox-container label { width: 24px; height: 24px; border: 2px solid #666; border-radius: 50%; display: grid; place-items: center; transition: 0.3s; pointer-events: none; }
+.checkbox-container input:checked + label { background: var(--accent); border-color: var(--accent); transform: scale(1.1); }
+.checkbox-container input:checked + label::after { content: '✓'; color: white; font-size: 14px; font-weight: bold; }
+.card.completed { opacity: 0.4; filter: grayscale(1); }
 
-.checkbox-container label {
-    width: 26px;
-    height: 26px;
-    border: 2px solid #666;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.legal-footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--card-border); text-align: center; color: var(--text-sub); font-size: 0.75rem; opacity: 0.6; }
+#save-status { position: fixed; bottom: 20px; right: 20px; color: var(--text-sub); font-size: 0.8rem; opacity: 0; transition: opacity 0.5s; background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 10px; pointer-events: none; }
+
+/* EXPORT CARD STYLES */
+#export-container {
+    display: none; position: relative; margin: 50px auto; width: 1280px; height: 720px;
+    background-image: url('card.png'); background-size: 100% 100%; background-repeat: no-repeat;
+    box-sizing: border-box; box-shadow: 0 0 50px rgba(0,0,0,0.5); border: 2px solid #333;
 }
 
-.checkbox-container input:checked + label {
-    background: var(--accent);
-    border-color: var(--accent);
-    box-shadow: 0 0 15px var(--accent);
-    transform: scale(1.1);
+.export-grid-overlay {
+    position: absolute; display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: repeat(4, 1fr); gap: 0; align-items: center; justify-items: center;
 }
+.export-card {
+    width: 100%; height: 100%; background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-top: 5px;
+}
+.export-card img { width: 60px; height: 60px; object-fit: contain; margin-bottom: 2px; filter: drop-shadow(0 3px 5px rgba(0,0,0,0.8)); }
+.export-card span { font-family: 'Segoe UI', sans-serif; font-size: 1.1rem; font-weight: 800; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,1); }
 
-.checkbox-container input:checked + label::after {
-    content: '✓';
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
+/* Savings on Card */
+.card-savings-overlay {
+    position: absolute; bottom: 35px; left: 40px; display: flex; gap: 40px;
 }
-
-.card.completed {
-    opacity: 0.4;
-    filter: grayscale(1);
-}
-
-/* Save Indicator */
-#save-status {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: var(--text-sub);
-    font-size: 0.8rem;
-    opacity: 0;
-    transition: opacity 0.5s;
-    background: rgba(0,0,0,0.5);
-    padding: 5px 10px;
-    border-radius: 10px;
-    pointer-events: none;
-}
-
-@media (max-width: 600px) {
-    body { padding: 20px; }
-    header { flex-direction: column; align-items: flex-start; gap: 20px; }
-    h1 { font-size: 2rem; }
-    .checklist-grid { grid-template-columns: 1fr; }
-}
-
-/* --- Legal Footer --- */
-.legal-footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid var(--card-border);
-    text-align: center;
-    color: var(--text-sub);
-    font-size: 0.75rem; /* Smaller font for legal text */
-    opacity: 0.6;       /* Make it subtle */
-    line-height: 1.6;
-}
-
-.legal-footer p {
-    margin: 5px 0;
-}
+.card-saving-item { display: flex; align-items: center; gap: 10px; }
+.card-saving-item img { width: 50px; height: 50px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8)); }
+.card-saving-item img.primo-card-icon { width: 65px; height: 65px; }
+.card-saving-item span { font-family: 'Segoe UI', sans-serif; font-size: 1.8rem; font-weight: 800; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,1); }
